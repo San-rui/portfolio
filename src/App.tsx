@@ -1,10 +1,12 @@
-import React from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <p>SN</p>
-    </div>
+    <BrowserRouter>
+        <Switch>
+          {/* <Route path="/" component={Home} /> */}
+        </Switch>
+      </BrowserRouter>
   );
 }
 
