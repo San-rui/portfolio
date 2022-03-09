@@ -15,6 +15,15 @@
     justify-content: center;
     align-items: center;
 
+    .button-music{
+        background-color: transparent;
+        background-repeat: no-repeat;
+        border: none;
+        cursor: pointer;
+        overflow: hidden;
+        outline: none;
+        color: #E131ED;
+    }
 
     .about-card{
         width: 50%;
@@ -25,6 +34,8 @@
         transition: 0.3s;
         padding: 20px 40px;
         box-shadow: 11px -9px 0px -5px #7828dc;
+
+        
 
         .hello-card{
             position: relative;
