@@ -1,14 +1,13 @@
 @import '../../../scss/variables.scss';
 
 .nav{
-
+    width: 100%;
     display:flex ;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     font-family: verdana;
-
-    .sn{
-        font-size: 1.3rem;
-    }
+    position: relative;
+    padding-top: 1rem;
 
     .list{
 
@@ -24,7 +23,7 @@
             .link{
                 text-decoration: none;
                 text-transform: uppercase;
-                color: #222;
+                color: rgb(255, 255, 255);
                 position: relative;
             }
 
@@ -32,7 +31,7 @@
                 content: "";
                 width: 0;
                 height: 5px;
-                background-color: #00bcd4;
+                background-color: #6EEFF3;
                 position:absolute;
                 top: 120%;
                 left: 0;
@@ -43,7 +42,7 @@
                 content: "";
                 width: 0;
                 height: 5px;
-                background-color: #f0f;
+                background-color: #E131ED;
                 position:absolute;
                 top: 120%;
                 right: 0;

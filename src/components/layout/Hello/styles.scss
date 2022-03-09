@@ -1,0 +1,70 @@
+@import '../../../fonts/LifeOfApple/LifeOfApple.ttf' ;
+
+@font-face {
+    font-family: "LifeOfApple";
+    src: local("LifeOfApple"),
+        url('../../../fonts/LifeOfApple/LifeOfApple.ttf') format("truetype");
+}
+
+.hello{
+    margin: 2rem 0;
+    position: relative;
+    display: flex;
+    width: 80%;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+
+
+    .about-card{
+        width: 50%;
+        height: 10rem;
+        background-color: #060c66;
+        border-radius: 2rem;
+        box-shadow: 0px 5px 20px rgba(0, 0 ,0 , 0.5);
+        transition: 0.3s;
+        padding: 20px 40px;
+        box-shadow: 11px -9px 0px -5px #7828dc;
+
+        .hello-card{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            //transform: translateY(0px);
+            z-index: 1;
+
+            .title{
+                font-size: 6rem;
+                font-family: "LifeOfApple";
+                color: #E131ED;
+                text-align: center;
+                text-shadow:0px 0px 0px ,4px -3px 0px #6EEFF3;
+            }
+
+            .about-me{
+                color: #E131ED;
+                text-align: center;
+            }
+        }
+
+        .content-card{
+            color: rgb(0, 0, 0);
+            padding: 10px 20px;
+            text-align: center;
+            transition: 0.3s;
+            transform:translateY(-300px);
+            opacity: 0;
+        }
+    }
+
+    .about-card:hover{
+        height: 20rem;
+        box-shadow: 11px -9px 0px -5px #E131ED;
+    }
+
+    .about-card:hover .content-card{
+        opacity: 1;
+        color: rgb(247, 243, 243);
+        transform: translateY(-150px)
+    }
+}

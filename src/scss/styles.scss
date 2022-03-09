@@ -1,13 +1,8 @@
-@import '../fonts/LifeOfApple/LifeOfApple.ttf' ;
-
-@font-face {
-    font-family: "LifeOfApple";
-    src: local("LifeOfApple"),
-        url("../fonts/LifeOfApple/LifeOfApple.ttf") format("truetype");
-}
 
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: verdana;
+
 }

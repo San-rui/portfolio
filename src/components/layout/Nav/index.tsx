@@ -6,10 +6,9 @@ import './styles.scss'
 const Nav: FC = () => {
     return (
         <div className='nav'>
-            <p className='sn'>SN</p>
             <ul className="list">
                 <li>
-                    <Link to={''} className="link">About me</Link>
+                    <Link to={'hello'} className="link">About me</Link>
                 </li>
                 <li>
                     <Link to={''} className="link">Knowledge</Link>
