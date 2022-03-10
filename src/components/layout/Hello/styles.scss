@@ -1,11 +1,11 @@
 .hello{
-    margin: 2rem 0;
     position: relative;
     display: flex;
     width: 80%;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
+    height: 100vh;
 
     .button-music{
         background-color: transparent;
