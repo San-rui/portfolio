@@ -1,18 +1,10 @@
-@import '../../../fonts/LifeOfApple/LifeOfApple.ttf' ;
-
-@font-face {
-    font-family: "LifeOfApple";
-    src: local("LifeOfApple"),
-        url('../../../fonts/LifeOfApple/LifeOfApple.ttf') format("truetype");
-}
-
 .hello{
     margin: 2rem 0;
     position: relative;
     display: flex;
     width: 80%;
     flex-direction: row-reverse;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
     .button-music{
@@ -45,11 +37,11 @@
             z-index: 1;
 
             .title{
-                font-size: 6rem;
-                font-family: "LifeOfApple";
+                font-size: 4rem;
                 color: #E131ED;
                 text-align: center;
                 text-shadow:0px 0px 0px ,4px -3px 0px #6EEFF3;
+                letter-spacing: 0.3rem;
             }
 
             .about-me{

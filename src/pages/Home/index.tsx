@@ -1,7 +1,8 @@
-import './styles.scss';
-
 import { Nav, Hello} from '../../components/layout';
 import Particles from "react-tsparticles";
+import { SocialMedia } from '../../components/common';
+
+import './styles.scss';
 
 const Home = () => {
     return (
@@ -11,7 +12,7 @@ const Home = () => {
                 options={{
                     background: {
                         color: {
-                        value: "#0a0a0a",
+                        value: "001219",
                         },
                     },
                     fpsLimit: 60,
@@ -107,6 +108,7 @@ const Home = () => {
             />
 
             <Nav/>
+            <SocialMedia/>
             <Hello/>
         </div>
     )
