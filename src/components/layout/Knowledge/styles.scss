@@ -1,0 +1,129 @@
+@import '../../../scss/variables.scss';
+
+.knowledge{
+    position: relative;
+    color:$color-white;
+    width: 80%;
+    display: flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items: center;
+    margin: 2rem 0;
+    transition-duration: 0.6s;
+    opacity: 0;
+
+    .knowledge-title-container{
+
+        display: flex;
+        justify-content:flex-start;
+        flex-direction:row;
+        align-items: center;
+        width: 100%;
+        margin: 2rem 0;
+
+        .knowledge-title{
+            font-size: 2rem;
+        }
+
+        .knowledge-line{
+            margin-left: 2rem;
+            height: 1px;
+            width: 100%;
+            background-color: $primary;
+        }
+    }
+
+    .container{
+
+        display: flex;
+        justify-content:space-between;
+        flex-direction:row;
+        align-items: center;
+        width: 100%;
+
+        .text-knowledge{
+            width: 50%;
+        }
+
+        .container-knowledge{
+            width: 45%;
+            display: flex ;
+            flex-wrap: wrap;
+            justify-content:flex-start;
+            margin-left: 5%;
+    
+            .logo{
+                margin: 10px;
+                display: flex;
+                justify-content:center;
+                align-items: center;
+                background-color: $color-white;
+                padding: 1rem;
+                border-radius: 1rem;
+                box-shadow: 3px -3px 0px 0px $primary;
+                position: relative;
+                overflow: hidden;
+                color: $secondary;
+                z-index: 9;
+    
+                .icon{
+                    line-height: 99px;
+                    font-size: 25px;
+                    transition: all 0.2s;
+                }
+    
+                .icon:hover{
+                    transform: scale(1.5);
+                    color: $color-white;
+                }
+            }
+    
+            .logo:before{
+                content: "";
+                position:absolute;
+                width: 120%;
+                height:120%;
+                background-color: $secondary;
+                left: -110%;
+                top:90%;
+                transform: rotate(40deg);
+                border-radius: 1rem;
+                z-index: -1;
+            }
+    
+            .logo:hover:before{
+                animation: animation 0.7s 1 forwards
+    
+            }
+    
+            .logo:hover{
+                color: $color-white;
+            }
+    
+            @keyframes animation {
+                0% {
+                    left: -100%;
+                    top: 90%;
+                }
+    
+                50% {
+                    left: 15%;
+                    top: -30%;
+                }
+    
+                100% {
+                    left: -10%;
+                    top: -10%;
+                }
+            }
+        }
+    }
+
+    
+}
+
+.knowledge.knowledge-scroll{
+    transform: translatey(-30%);
+    transition-duration: 0.6s;
+    opacity: 1;
+}

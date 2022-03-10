@@ -49,7 +49,7 @@ const Hello = () => {
             </div>
             
             <button className="button-music" onClick={(click) => togglePlayStatus()}>
-                <Lottie 
+                <Lottie
                     options={{
                         loop: animation,
                         autoplay: animation,
@@ -58,8 +58,8 @@ const Hello = () => {
                         preserveAspectRatio: "xMidYMid slice"
                         }
                     }}
-                    height={400}
-                    width={400}
+                    height={'38vw'}
+                    width={'38vw'}
                 />
                 {statusLabel(status)} MUSIC
             </button>

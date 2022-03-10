@@ -1,4 +1,4 @@
-import { Nav, Hello} from '../../components/layout';
+import { Nav, Hello, Knowledge} from '../../components/layout';
 import Particles from "react-tsparticles";
 import { SocialMedia } from '../../components/common';
 
@@ -110,6 +110,7 @@ const Home = () => {
             <Nav/>
             <SocialMedia/>
             <Hello/>
+            <Knowledge/>
         </div>
     )
 }
