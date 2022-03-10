@@ -60,3 +60,24 @@
         background-color: $primary;
     }
 }
+
+@media screen and (max-width:560px){
+
+    .social-media{
+
+        left: 0.5rem;
+
+        .li-link{
+
+    
+            .img-logo{
+                width: 1.2rem;
+            }
+        }
+    }
+
+    .email{
+        right: 0.5rem;
+    }
+
+}

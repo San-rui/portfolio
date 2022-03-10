@@ -17,6 +17,10 @@ const Hello = () => {
         setAnimation(!animation)
     }
 
+    const size = window.innerWidth >= 720? '38vw': '25rem';
+
+    console.log(size)
+
     function statusLabel(status: ReactSoundProps['playStatus']): string {
         switch(status) {
         case 'STOPPED':
@@ -36,6 +40,23 @@ const Hello = () => {
                 playStatus={status}
                 playFromPosition={0}
             />
+
+            <button className="button-music" onClick={(click) => togglePlayStatus()}>
+                <Lottie
+                    options={{
+                        loop: animation,
+                        autoplay: animation,
+                        animationData: girl,
+                        rendererSettings: {
+                        preserveAspectRatio: "xMidYMid slice"
+                        }
+                    }}
+                    height={size}
+                    width={size}
+                />
+                {statusLabel(status)} MUSIC
+            </button>
+
             <div className="about-card">
                 <div className="hello-card">
                     <h2 className="title">Hi, I'm San</h2>
@@ -48,21 +69,7 @@ const Hello = () => {
 
             </div>
             
-            <button className="button-music" onClick={(click) => togglePlayStatus()}>
-                <Lottie
-                    options={{
-                        loop: animation,
-                        autoplay: animation,
-                        animationData: girl,
-                        rendererSettings: {
-                        preserveAspectRatio: "xMidYMid slice"
-                        }
-                    }}
-                    height={'38vw'}
-                    width={'38vw'}
-                />
-                {statusLabel(status)} MUSIC
-            </button>
+            
         </div>
     )
 }
